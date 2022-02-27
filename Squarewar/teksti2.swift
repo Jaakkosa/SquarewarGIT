@@ -25,7 +25,7 @@ var kayttajanInput = ""
         self.addChild(tausta)
         
         var runCount = 0
-        TextInput.text = "mahku"
+        TextInput.text = ""
         
         Timer.scheduledTimer(withTimeInterval: 0.0001, repeats: true) { timer in
             runCount += 1
