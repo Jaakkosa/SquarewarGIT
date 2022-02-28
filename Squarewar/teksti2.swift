@@ -16,7 +16,7 @@ var kayttajanInput = ""
 {
     
         
-        var TextInput = UITextField()
+        let TextInput = UITextField()
         
         let tausta = SKSpriteNode(imageNamed: "menu")
         tausta.size = self.size
@@ -85,7 +85,7 @@ var kayttajanInput = ""
 
     TextInput.backgroundColor = .white
         TextInput.text = ""
-        var tekstit = TextInput.text
+      let tekstit = TextInput.text
         kayttajanInput(vaihto: tekstit ?? "")
         TextInput.tag = 100
         
@@ -127,6 +127,8 @@ var kayttajanInput = ""
         tickTausta.name = "tick"
         tickTausta.alpha = 0
         addChild(tickTausta)
+        
+    
         
  
         

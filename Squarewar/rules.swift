@@ -17,6 +17,7 @@ class Rules: SKScene {
         tausta.size = self.size
         tausta.position = CGPoint(x: self.size.width/2, y: self.size.height/2)
         tausta.zPosition = 0
+        tausta.name = "tausta"
         self.addChild(tausta)
     
         let otsikko = SKLabelNode(fontNamed: "Chalkduster")
@@ -82,6 +83,8 @@ let tekstit3 = SKLabelNode(fontNamed: "Chalkduster")
                                 self.addChild(tekstit6)
         
     
+        
+    
 
         
         
@@ -94,5 +97,25 @@ let tekstit3 = SKLabelNode(fontNamed: "Chalkduster")
 
     
     }
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+         for touch in touches {
+              let location = touch.location(in: self)
+              let touchedNode = atPoint(location)
+            if touchedNode.name == "tausta" {
+                getscene()
+                
+            }
+         }
+        
+    }
+    func getscene() {
+        let reveal = SKTransition.crossFade(withDuration: 1)
+                let newScene = GameScene(size: CGSize(width: 1536, height: 2048))
+                
+        scene?.view!.presentScene(newScene,
+                                        transition: reveal)
+    }
+   
+    }
     
-}
+
