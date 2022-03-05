@@ -4,7 +4,7 @@
 <body style = "background-color: green">
  <div style = "color: gray;"> 
 <h2 style = "font-family: Fantasy;">
- Squarewars is player vs player offline game where gamers get to test their reaction times against their peers. Objective of the game is to click the appeared square before your opponent does. 
+ Squarewars is a player vs player offline game where gamers get to test their reaction times against their peers. Objective of the game is to click the appeared square before your opponent does. 
 </h2>
  </div>
 <div style = "display: flex; justify-content: center; align-items: center; width: 100%; height: 20%; background-color: green;">
